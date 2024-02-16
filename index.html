@@ -11,9 +11,10 @@
     <div id="app">
         <div id="root">
             <!-- classi assegnate -->
-            <h1 >{{message}}</h1>
+            <h1 :class="message">{{message}}</h1>
+            <img :src="testo" alt="">
         </div>   
-       <input V-model="message" >
+       <!-- <input V-model="testo" > -->
         
         
     </div>
@@ -25,7 +26,7 @@
         data() {
             return{
                 message:`Ciao a tutti Questo è vue!!`,
-                
+                testo:`https://tse4.mm.bing.net/th/id/OIG4.7H7RI7jzG2E5cO0W0Jua?pid=ImgGn`
             }
         }
     }).mount(`#app`)
